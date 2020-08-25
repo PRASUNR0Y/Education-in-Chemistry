@@ -4905,6 +4905,6 @@ element = {
     }
 
 }
-
-chemistry = Element(input("Enter element name :") or 'hydrogen')
-print(chemistry.chem('**  ', '## '))
+while(True):
+    chemistry = Element(input("Enter element name :") or 'hydrogen')
+    print(chemistry.chem('**  ', '## '))
