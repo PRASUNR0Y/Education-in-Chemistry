@@ -5,11 +5,11 @@ class Element:
         self.element = element.title()
 
     def chem(self, pro, proo):
-        if not self.element in elements:
+        if not self.element in element:
             return (
                 f'"{self.element}" does not exists as a Chemical Element\n\nEnter something like Oxygen....')
         else:
-            ell = elements[self.element]
+            ell = element[self.element]
             return (
                 "{}{}{}\n\n{} ELEMENT   : {}\n{} APPEARANCE: {}\n{} SYMBOL    : {}\n{} NUMBER    : {}\n{} PERIOD    : {}\n{} PHASE     : {}\n{} ATOMIC MASS: {}\n{} BOILING pt: {}\n{} MELTING Pt: {}\n{} CATEGORY  : {}\n{} DENSITY    : {}\n{} MOLAR HEAT  : {}\n{} CONFIGURATION : {}\n{} AFFINITY    : {}\n{} ELECTRONEGATIVITY : {}\n{} IONIZATION e  : {}\n{} Xpos    : {}\n{} Ypos    : {}\n{} SHELLS   : {}\n{} DISCOVERED BY: {}\n{} NAMED BY  : {}\n\n\n{} {}\n\n{}".format(
                     proo, 'EDUCATION IN CHEMISTRY'.center(46), proo,
@@ -31,9 +31,8 @@ class Element:
                     'Programmed by Prasun'.center(11)
                 ))
 
-
 null = ''
-elements = {
+element = {
     "Hydrogen": {
         "appearance": "colorless gas",
         "atomic_mass": 1.008,
